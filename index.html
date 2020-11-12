@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="#">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css" type="text/css">
+  <title>Car Quiz</title>
+</head>
+
+<body>
+  <!--top section-->
+  <div class="wrapper-intro">
+    <div class="intro">
+      <h1>Car Nerd Quiz</h1>
+    </div>
+    <!--result section-->
+    <div class="result">
+      <p>You are <span></span> car nerd !</p>
+    </div>
+  </div>
+  <div class="wrapper-quiz">
+    <div class="inner">
+      <!--quiz section-->
+
+      <h3>On with the questions....</h3>
+      <form class="quiz-form">
+        <section>
+          <p><span>1.</span> What does an LSD acronym stand for in car terms?</p>
+          <div class="form-answer">
+            <input type="radio" name="q1" id="q1a" value="A">
+            <label for="q1a">Limited-slip differential (system that alows faster cornering by
+              shuffling torque between the driven wheels).</label>
+          </div>
+          <div class="form-answer">
+            <input type="radio" name="q1" id="q1b" value="B">
+            <label for="q1b">ECU flash that makes your car behave wierd, navigation keeps
+              loosing your current position, car clock is going faster or slower and engine temp is either above or
+              under the limit.</label>
+          </div>
+        </section>
+        <section>
+          <p><span>2.</span> How many mid-engine variations are there?</p>
+          <div class="form-answer">
+            <input type="radio" name="q2" id="q2a" value="A">
+            <label for="q2a">Only one, the engine sits between front and rear axle.</label>
+          </div>
+          <div class="form-answer">
+            <input type="radio" name="q2" id="q2b" value="B">
+            <label for="q2b">There are two. First is front mid-engine (engine is pushed
+              behind the front axle) and second is rear mid-engine (engine is sits in front of rear axle). </label>
+          </div>
+        </section>
+        <section>
+          <p><span>3.</span> What does a hatchback mean?</p>
+          <div class="form-answer">
+            <input type="radio" name="q3" id="q3a" value="A">
+            <label for="q3a">A type of cars that have a rear door, a hatch in the
+              back.</label>
+          </div>
+          <div class="form-answer">
+            <input type="radio" name="q3" id="q3b" value="B">
+            <label for="q3b">Special mod that means cutting off the trunk of the car making it more
+              aerodinamic and lighter.</label>
+          </div>
+        </section>
+        <section>
+          <p><span>4.</span> What does a BMW acronym stand for?</p>
+          <div class="form-answer">
+            <input type="radio" name="q4" id="q4a" value="A">
+            <label for="q4a">Bavarian Motor Works.</label>
+          </div>
+          <div class="form-answer">
+            <input type="radio" name="q4" id="q4b" value="B">
+            <label for="q4b">Big Money Wasted.</label>
+          </div>
+        </section>
+        <section>
+          <p><span>5.</span> What does a locking diff mean?</p>
+          <div class="form-answer">
+            <input type="radio" name="q5" id="q5a" value="A">
+            <label for="q5a">Backup system to lock your wheels in place, if your handbrake fails.</label>
+          </div>
+          <div class="form-answer">
+            <input type="radio" name="q5" id="q5b" value="B">
+            <label for="q5b">System that increese traction by transfering equal amount of torque to driven wheels making them turn at the same speed.</label>
+          </div>
+        </section>
+        <div>
+          <input type="submit" class="submit">
+        </div>
+      </form>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+
+</html>
