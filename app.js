@@ -15,13 +15,13 @@ form.addEventListener('submit', e => {
       score += 25;
     };
   });
-  window.scrollTo(0, 0);                  // pise se bez window jer se on podrazumeva,zelimo da skrolujemo stranicu na vrh malo pre nego sto ubacimo text u span i otkrijemo ga, zato ga stavljamo pre toga 
-                                          //result.querySelector('span').textContent = `${score}%`; - ne koristimo vise
-  result.style.display = 'block';      //reaguje na submit posto je u njemu tj pod evenetLis
-  let output = 0;                         //postavljamo pocetnu vrednost output-a(brojcane vrednosti)%
+  window.scrollTo(0, 0);                 
+                                         
+  result.style.display = 'block';      
+  let output = 0;                         
   const timer = setInterval(() => {
-    result.querySelector('span').textContent = `${output}%`;  //selektujemo span i njegov sadrzaj postavljamo jednakim sa output
-    if(output === score){                                     // ako output bude = scorom prekini interval ako nije jos jednak dodaj jedan dok ne bude svakih 10ms
+    result.querySelector('span').textContent = `${output}%`;  
+    if(output === score){                                    
       clearInterval(timer)
     } else{
       output ++;
